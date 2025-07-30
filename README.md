@@ -1,10 +1,10 @@
 # Phishing-Detector
 AI-powered real-time phishing website detector using machine learning and browser automation.
 
-## 🚀 Features
+## Features
 ✅ Real-time URL scanning using live data  
 ✅ 48 intelligent features extracted per URL (DNS, SSL, WHOIS, Playwright, etc.)
-✅ Detects phishing websites using Random Forest classifier 
+✅ Detects phishing websites using Random Forest classifier
 ✅ Flask REST API for ML model predictions
 ✅ Integrated Flask backend with API for predictions  
 ✅ Chrome Extension to alert users during browsing  
@@ -14,7 +14,7 @@ AI-powered real-time phishing website detector using machine learning and browse
 ✅ Works with browser extension for instant scan
 
 
-## 🧠 Tech Stack
+## Tech Stack
 
 | Component          |   Tools Used                                         |
 |--------------------|------------------------------------------------------|
@@ -25,7 +25,7 @@ AI-powered real-time phishing website detector using machine learning and browse
 | Feature Extraction | Playwright, Requests, BeautifulSoup, DNS, SSL, WHOIS |
 | Dataset            | Custom or open phishing datasets                     |
 
-## 🧪 How It Works
+## How It Works
 
 1. User visits any website
 2. Extension sends the URL to Flask backend
@@ -54,9 +54,7 @@ Click Load unpacked
 Select the extension folder
 
 
----
-
-📡 API Endpoint (For Testing via Postman or Extension)**
+## API Endpoint (For Testing via Postman or Extension)**
 
  API Usage
 
@@ -67,14 +65,14 @@ json
   "url": "https://suspicious-website.com"
 }
 
--- Response Example:
+Response Example:
 {
   "prediction": "phishing🔴" / ("legit🟢"
   "confidence": "94.32%" / other)
 }
 
                    
-## 📷 Screenshots
+## Screenshots
 
 ### ✅ Legit Website Detection
 ![Legit Website](screenshots/postman-legit.png)
@@ -86,7 +84,7 @@ json
 ![Extension Result](screenshots/extension-scan.png)
 
 
-## 🧠 What You Learn
+## What You Learn
 
 - How to extract phishing indicators in real time
 - How to use browser automation for security tasks
@@ -96,8 +94,11 @@ json
 
 📌Note:
 1).Internet connection is required during training and scanning for real-time features (WHOIS, DNS, content).
+
 2).This tool performs client-side prediction and does not collect any user data.
+
 3).The prediction happens locally via your browser and local API server.
+
 4).Your browsing history is never sent to any external server.
 
 
