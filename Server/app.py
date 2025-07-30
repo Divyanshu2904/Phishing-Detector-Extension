@@ -27,7 +27,7 @@ def train_model():
     # ✅ Filter labels: 0 = legit, 1 = phishing
     df = df[df['ClassLabel'].isin([0, 1])]
     df = df.dropna(subset=["url"])
-    df = df.head(500)
+    df = df.head(201361)  # Limit to 201361 rows
 
     # Extract features from URLs
     print("🧠 Extracting features from URLs...")
